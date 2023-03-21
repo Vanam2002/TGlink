@@ -14,12 +14,11 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '27335730'))
 API_HASH = environ.get('API_HASH', 'ae5a5f660ffdf3e08997d493c32932f5')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6075104941:AAEsoDEV4PgNkS4atTuDUqIcoYclt43fNOA')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6110043034:AAEi_w1qbyaXEbNVJIaGpkyTsk8h_58Bz6I')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://te.legra.ph/file/9b5025f328c4c09a55e70.jpg https://te.legra.ph/file/74198e2f82e1eb11fc8f1.jpg https://te.legra.ph/file/bb6b80f0320164d1886a2.jpg https://te.legra.ph/file/ca639cf01449180c9a9b8.jpg https://te.legra.ph/file/35ffb77757c87ffcb60ae.jpg https://te.legra.ph/file/35ffb77757c87ffcb60ae.jpg https://te.legra.ph/file/5fd2aa764307225847b65.jpg https://te.legra.ph/file/bbb903aa6b25622d69b29.jpg 
-https://te.legra.ph/file/ef1a2064429c78700ea12.jpg https://te.legra.ph/file/e629eaad65bd2a88e078c.jpg https://te.legra.ph/file/7d7bc5d91da4676849680.jpg https://te.legra.ph/file/9c966e9d690e59da82b8f.jpg https://te.legra.ph/file/6f1c8418d2ce0663a92ff.jpg https://te.legra.ph/file/409a17e6f1b5fbc0310e1.jpg ')).split()
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/9b5025f328c4c09a55e70.jpg https://te.legra.ph/file/74198e2f82e1eb11fc8f1.jpg https://te.legra.ph/file/bb6b80f0320164d1886a2.jpg https://te.legra.ph/file/ca639cf01449180c9a9b8.jpg https://te.legra.ph/file/35ffb77757c87ffcb60ae.jpg https://te.legra.ph/file/5fd2aa764307225847b65.jpg https://te.legra.ph/file/bbb903aa6b25622d69b29.jpg https://te.legra.ph/file/ef1a2064429c78700ea12.jpg https://te.legra.ph/file/02328095431092b233831.jpg https://te.legra.ph/file/e629eaad65bd2a88e078c.jpg https://te.legra.ph/file/7d7bc5d91da4676849680.jpg https://te.legra.ph/file/9c966e9d690e59da82b8f.jpg https://te.legra.ph/file/6f1c8418d2ce0663a92ff.jpg https://te.legra.ph/file/409a17e6f1b5fbc0310e1.jpg')).split()
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1735392935').split()]
@@ -44,7 +43,7 @@ IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", '𒆜𝐀𝐑 𝐅𝐢𝐥𝐦𝐬࿐')
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>𝗤𝘂𝗲𝗿𝘆: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 𝗧𝗶𝘁𝗹𝗲: <a href={url}>{title}</a>\n🎭 𝗚𝗲𝗻𝗿𝗲𝘀🤩: {genres}\n📆 𝗬𝗲𝗮𝗿: <a href={url}/releaseinfo>{year}</a>\n🌟 𝗥𝗮𝘁𝗶𝗻𝗴: <a href={url}/ratings>{rating}</a> / 10")
+IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>ℚ𝕦𝕖𝕣𝕪: {query}</b> \n‌‌‌‌𝕀𝕄𝔻𝔹 𝔻𝕒𝕥𝕒:\n\n🏷 𝕋𝕚𝕥𝕥𝕝𝕖: <a href={url}>{title}</a>\n🎭 𝔾𝕖𝕟𝕣𝕖𝕤 🤩: {genres}\n📆 𝕐𝕖𝕒𝕣 : <a href={url}/releaseinfo>{year}</a>\n🌟 ℝ𝕒𝕥𝕚𝕟𝕘𝕤 : <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
